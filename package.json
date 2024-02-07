@@ -1,0 +1,42 @@
+{
+  "name": "seng365-2023-assignment1-skeleton-project",
+  "version": "0.0.1",
+  "description": "Skeleton film festival server for SENG365 Assignment 1",
+  "main": "dist/server.js",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "author": "Morgan English",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.29.4",
+    "mysql2": "^2.3.3",
+    "mz": "^2.7.0",
+    "rand-token": "^1.0.1",
+    "winston": "^3.8.2",
+    "jimp": "^0.22.7"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/express": "^4.17.17",
+    "@types/mz": "^2.7.4",
+    "@types/node": "^18.11.9",
+    "body-parser": "^1.20.2",
+    "nodemon": "^2.0.21",
+    "tslint": "^6.1.3",
+    "typescript": "^4.8.4"
+  }
+}
